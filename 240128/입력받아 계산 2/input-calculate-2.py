@@ -1,0 +1,5 @@
+x=input()
+y=x.split()
+i=int(y[0])
+j=int(y[1])
+print(i*j)
