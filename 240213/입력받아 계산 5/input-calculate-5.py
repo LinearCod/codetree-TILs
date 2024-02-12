@@ -1,5 +1,5 @@
-temp=input()
-t=temp.split()
+tem=input()
+t=tem.split()
 a=int(t[0])
 b=int(t[1])
 print(a+b)
