@@ -1,0 +1,5 @@
+t=input()
+c=int(input())
+temp=t.split()
+a, b = int(temp[0]), int(temp[1])
+print(a,b,c)
