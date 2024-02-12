@@ -1,0 +1,5 @@
+t1=input()
+t2=float(input())
+t3=float(input())
+print(t1)
+print(f'{t2:.2f}\n{t3:.2f}')
