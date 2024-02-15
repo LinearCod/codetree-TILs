@@ -1,0 +1,5 @@
+num_inp = input()
+num = num_inp.split()
+a, b = int(num[0]), int(num[1])
+c = (a+b)/(a-b)
+print(f'{c:.2f}')
