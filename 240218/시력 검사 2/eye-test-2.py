@@ -4,4 +4,4 @@ if num >= 1.0:
 elif num >= 0.5:
     print('Middle')
 else:
-    print('low')
+    print('Low')
