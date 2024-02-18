@@ -1,13 +1,9 @@
 a,b,c = map(int, input().split())
 if a <= b and a <= c:
     print(a)
-else:
-    pass
-if b <= a and b <= c:
+elif b <= a and b <= c:
     print(b)
-else:
-    pass
-if c <= a and c <= b:
+elif c <= a and c <= b:
     print(c)
-else:
-    pass
+elif a == c and b == c:
+    print(a)
