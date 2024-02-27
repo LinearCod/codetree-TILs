@@ -2,9 +2,9 @@ a,b,c = map(int, input().split())
 
 for i in range(a,b+1):
     if i % c == 0:
-        booly = True
+        booly = '1'
         
-if booly == True:
+if booly == '1':
     print('YES')
 else:
     print('NO')
