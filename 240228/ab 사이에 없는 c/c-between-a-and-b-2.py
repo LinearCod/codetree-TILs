@@ -1,15 +1,15 @@
 a,b,c = map(int, input().split())
 
-booly = False
+booly = 1
 
 for i in range(a,b+1):
     if i % c != 0:
         if type(i % c) == float:
-            pass
+            booly = 1
         else:
-            booly = True
+            booly = 0
 
-if booly == True:
+if booly == 1:
     print('YES')
 else:
     print('NO')
