@@ -1,12 +1,12 @@
 a,b,c = map(int, input().split())
 
-booly = True
+booly = False
 
 for i in range(a,b+1):
     if i % c != 0:
-        booly = False
+        booly = True
 
 if booly == True:
-    print('NO')
-else:
     print('YES')
+else:
+    print('NO')
