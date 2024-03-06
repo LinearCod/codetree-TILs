@@ -17,7 +17,7 @@ for i in range(n):
     
     cnt += 1
 
-cnt = 2
+cnt = n - 2
 
 for i in range(n-1):
     lit = []
