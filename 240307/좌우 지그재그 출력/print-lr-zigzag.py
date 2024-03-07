@@ -14,5 +14,5 @@ for i in range(n):
             print(cnt_2, end=' ')
             cnt_2 -= 1
             if j == n - 1:
-                cnt_2 = 8*(i + 1)
+                cnt_2 = 2*n*(i + 1)
     print()
