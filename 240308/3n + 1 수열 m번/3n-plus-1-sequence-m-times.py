@@ -1,8 +1,7 @@
 m = int(input())
 
-cnt = 0
-
 for _ in range(m):
+    cnt = 0
     n = int(input())
     while n != 1:
         if n % 2 == 0:
