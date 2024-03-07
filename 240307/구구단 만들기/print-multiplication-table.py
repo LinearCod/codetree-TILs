@@ -7,7 +7,7 @@ if b - 2 != a:
     for i in range(1, 10):
         for j in lit:
             print(f'{j} * {i} = {j*i}', end=' ')
-            if j > len(lit) - 1:
+            if j > len(lit) - 1 and b != a:
                 print('/', end=' ')
         print()
 else:
