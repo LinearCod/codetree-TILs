@@ -9,10 +9,10 @@ for i in range(n):
             print(cnt_1, end=' ')
             cnt_1 += 1
             if j == n - 1:
+                if i != 0:
+                    cnt_2 = cnt_1 + n - 1
                 cnt_1 += n
         else:
             print(cnt_2, end=' ')
             cnt_2 -= 1
-            if j == n - 1:
-                cnt_2 = 2*n*(i + 1)
     print()
