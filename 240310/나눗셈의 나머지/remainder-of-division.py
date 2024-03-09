@@ -5,7 +5,7 @@ remain_num = [0] * b
 cnt = 0
 
 while True:
-    if a // b == 0 or a == 1:
+    if a <= 1:
         break
     remain.append(a % b)
     a //= b
