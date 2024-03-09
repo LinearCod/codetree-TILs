@@ -8,7 +8,7 @@ for i in arr:
     elif i % 2 == 0 and i != 0:
         arr_1.append(i // 2)
     else:
-        pass
+        break
 
 for i in arr_1:
     print(i, end=' ')
