@@ -5,9 +5,9 @@ remain_num = [0] * b
 cnt = 0
 
 while True:
-    remain.append(a % b)
-    if a // b == 0:
+    if a // b == 0 or a == 1:
         break
+    remain.append(a % b)
     a //= b
 
 for i in remain:
