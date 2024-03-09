@@ -1,23 +1,19 @@
-a,b = map(int, input().split())
+a, b = map(int, input().split())
 
-arr = [0] * b
-
-a_list = [a]
-b_list = []
+remain = []
+remain_num = [0] * b
+cnt = 0
 
 while True:
-    if a_list[-1] == a:
-        a_list.append(a // b)
-        b_list.append(a % b)
-    else:
-        a_list.append(a_list[-1] // b)
-        b_list.append(a_list[-1] % b)
-        if a_list[-1] == 0:
-            break
+    remain.append(a % b)
+    if a // b == 0:
+        break
+    a //= b
 
-for i in b_list:
-    arr[i] += 1
+for i in remain:
+    remain_num[i] += 1
 
-result = [i ** 2 for i in arr]
+for i in remain_num:
+    cnt += i ** 2
 
-print(sum(result))
+print(cnt)
