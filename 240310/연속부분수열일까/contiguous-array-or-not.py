@@ -12,6 +12,8 @@ cnt_1 = arr_A.count(arr_B[0])
 
 cnt_2 = 0
 
+cnt_3 = 0
+
 start_a = []
 
 if cnt_1 == 1 and leng_B != 1:
@@ -31,14 +33,18 @@ elif cnt_1 != 1 and leng_B != 1:
         else:
             New_a = arr_A[i:i + leng_B]
             if New_a == arr_B:
-                print('Yes')
+                cnt_1 += 1
             else:
-                print('No')
+                pass
+    if cnt_1 != 0:
+        print('Yes')
+    else:
+        print('No')
 elif leng_B == 1:
     for i in arr_A:
         if i == arr_B[0]:
-            cnt_2 += 1
-    if cnt_2 == 0:
+            cnt_3 += 1
+    if cnt_3 == 0:
         print('No')
     else:
         print('Yes')
