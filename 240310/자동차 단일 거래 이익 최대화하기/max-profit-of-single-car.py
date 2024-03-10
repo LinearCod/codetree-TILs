@@ -10,13 +10,14 @@ buy = arr[idx_buy]
 
 arr = arr[idx_buy:]
 
-if arr == []:
+if arr == [] or n == 1:
     print(0)
 else:
     if max(arr) <= buy:
         print(0)
-    for i in arr:
-        if i == max(arr):
-            print(max(arr) - buy)
-        else:
-            continue
+    else:
+        for i in arr:
+            if i == max(arr):
+                print(max(arr) - buy)
+            else:
+                continue
