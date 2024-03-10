@@ -19,9 +19,6 @@ while True:
                 t = 0
                 break
             arr.remove(max_val)
-            if arr == []:
-                t = 0
-                break
     elif t == 0:
         print(-1)
         break
