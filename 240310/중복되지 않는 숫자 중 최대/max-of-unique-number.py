@@ -1,28 +1,26 @@
-n = int(input())
+def find_max_unique(nums):
+    num_count = {}
+    
+    for num in nums:
+        if num in num_count:
+            num_count[num] += 1
+        else:
+            num_count[num] = 1
+    
+    max_unique = -1
+    
+    for num, count in num_count.items():
+        if count == 1 and num > max_unique:
+            max_unique = num
+    
+    return max_unique
 
-arr = list(map(int, input().split()))
+# 입력 받기
+N = int(input())
+numbers = list(map(int, input().split()))
 
-max_val = 0
+# 중복되지 않는 숫자 중 최댓값 찾기
+result = find_max_unique(numbers)
 
-t = 7
-
-for i in arr:
-    if i > max_val:
-        max_val = i
-
-arr_count = arr.count(max_val)
-
-while True:
-    if arr_count != 1 and t != 0:
-        for _ in range(n):
-            if max_val not in arr:
-                t = 0
-                break
-            arr.remove(max_val)
-    elif t == 0:
-        print(-1)
-        break
-    elif arr_count == 1 and t != 0:
-        print(max(arr))
-        break
-    arr_count = arr.count(max(arr))
+# 결과 출력
+print(result)
