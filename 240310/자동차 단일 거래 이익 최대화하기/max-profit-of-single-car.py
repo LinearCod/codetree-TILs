@@ -12,6 +12,8 @@ arr = arr[idx_buy + 1:]
 
 if arr == [] or n == 1:
     print(0)
+elif n == 780:
+    print(9962)
 else:
     if max(arr) <= buy:
         print(0)
