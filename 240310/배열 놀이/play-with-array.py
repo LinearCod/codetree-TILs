@@ -15,5 +15,5 @@ for _ in range(q):
             idx = arr.index(question[1])
             print(idx + 1)
     else:
-        for i in range(question[1], question[-1] + 1):
+        for i in range(question[1], question[2] + 1):
             print(arr[i - 1], end=' ')
