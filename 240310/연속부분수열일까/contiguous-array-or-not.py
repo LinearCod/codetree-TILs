@@ -18,7 +18,7 @@ start_a = []
 
 if cnt_1 == 1 and leng_B != 1:
     idx = arr_A.index(arr_B[0])
-    New_A = arr_A[idx:idx + leng_B + 1]
+    New_A = arr_A[idx:idx + leng_B]
     if New_A == arr_B:
         print('Yes')
     else:
