@@ -10,7 +10,7 @@ for i in range(2):
     for j in range(4):
         sum_array += array[i][j]
         avg_array = sum_array / 4
-    print(float(int(avg_array)), end=' ')
+    print(f'{avg_array:.1f}', end=' ')
     sum_array = 0
 
 print()
@@ -19,7 +19,7 @@ for i in range(4):
     for j in range(2):
         sum_array += array[j][i]
     avg_array = sum_array / 2
-    print(float(int(avg_array)), end=' ')
+    print(f'{avg_array:.1f}', end=' ')
     sum_array = 0
 
 print()
@@ -32,4 +32,4 @@ for i in range(2):
 
 avg_total = sum_total / 8
 
-print(float(int(avg_total)))
+print(f'{avg_total:.1f}')
