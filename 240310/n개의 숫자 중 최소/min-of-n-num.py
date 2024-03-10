@@ -10,7 +10,7 @@ for i in arr[1:]:
     if a > i:
         a = i
 
-for i in arr[1:]:
+for i in arr:
     if a == i:
         cnt += 1
 
