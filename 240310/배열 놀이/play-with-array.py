@@ -17,3 +17,4 @@ for _ in range(q):
     else:
         for i in range(question[1], question[2] + 1):
             print(arr[i - 1], end=' ')
+        print()
