@@ -2,7 +2,7 @@ n,q = map(int, input().split())
 
 arr = list(map(int, input().split()))
 
-for i in range(q):
+for _ in range(q):
     question = list(map(int, input().split()))
     type_q = question[0]
     if type_q == 1:
