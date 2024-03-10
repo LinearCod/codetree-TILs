@@ -2,14 +2,10 @@ word = input()
 
 arr = ['L', 'E', 'B', 'R', 'O', 'S']
 
-cnt = 0
+cnt = 'None'
 
-for i in arr:
-    if i == word:
-        break
-    cnt += 1
+for i, char in enumerate(arr):
+    if char == word:
+        cnt = i
 
-if word not in arr:
-    print('None')
-else:
-    print(cnt)
+print(cnt)
