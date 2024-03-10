@@ -8,18 +8,20 @@ leng_A = len(arr_A)
 
 leng_B = len(arr_B)
 
-cnt = arr_A.count(arr_B[0])
+cnt_1 = arr_A.count(arr_B[0])
+
+cnt_2 = 0
 
 start_a = []
 
-if cnt == 1:
+if cnt_1 == 1 and leng_B != 1:
     idx = arr_A.index(arr_B[0])
     New_A = arr_A[idx:idx + leng_B + 1]
     if New_A == arr_B:
         print('Yes')
     else:
         print('No')
-else:
+elif cnt_1 != 1 and leng_B != 1:
     for i in range(leng_A):
         if arr_A[i] == arr_B[0]:
             start_a.append(i)
@@ -32,3 +34,16 @@ else:
                 print('Yes')
             else:
                 print('No')
+elif leng_B == 1:
+    for i in arr_A:
+        if i == arr_B[0]:
+            cnt_2 += 1
+    if cnt_2 == 0:
+        print('No')
+    else:
+        print('Yes')
+
+
+# 4 1
+# 1 2 5 2
+# 3
