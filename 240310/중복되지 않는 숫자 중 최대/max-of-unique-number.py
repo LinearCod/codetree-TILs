@@ -14,7 +14,7 @@ arr_count = arr.count(max_val)
 
 while True:
     if arr_count != 1 and t != 0:
-        for _ in range(arr_count):
+        for _ in range(n):
             if max_val not in arr:
                 t = 0
                 break
