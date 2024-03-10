@@ -2,18 +2,8 @@ n = int(input())
 
 arr = list(map(int, input().split()))
 
-max_val_1 = 0
+arr.sort()
 
-max_val_2 = 0
-
-for i in arr:
-    if i > max_val_1:
-        max_val_1 = i
-
-arr.remove(max_val_1)
-
-for i in arr:
-    if i > max_val_2:
-        max_val_2 = i
+max_val_1, max_val_2 = arr[-1], arr[-2]
 
 print(max_val_1, max_val_2)
