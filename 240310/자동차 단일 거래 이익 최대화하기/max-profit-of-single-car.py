@@ -1,0 +1,22 @@
+n = int(input())
+
+arr = list(map(int, input().split()))
+
+cnt = 0
+
+idx_buy = arr.index(min(arr))
+
+buy = arr[idx_buy]
+
+arr = arr[idx_buy:]
+
+if arr == []:
+    print(0)
+else:
+    if max(arr) <= buy:
+        print(0)
+    for i in arr:
+        if i == max(arr):
+            print(max(arr) - buy)
+        else:
+            continue
