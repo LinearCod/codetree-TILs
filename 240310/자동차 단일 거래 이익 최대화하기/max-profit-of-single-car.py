@@ -8,7 +8,7 @@ idx_buy = arr.index(min(arr))
 
 buy = arr[idx_buy]
 
-arr = arr[idx_buy:]
+arr = arr[idx_buy + 1:]
 
 if arr == [] or n == 1:
     print(0)
