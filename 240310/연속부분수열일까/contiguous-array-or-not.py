@@ -8,7 +8,7 @@ leng_A = len(arr_A)
 
 leng_B = len(arr_B)
 
-cnt = arr_A.count(arr_A[0])
+cnt = arr_A.count(arr_B[0])
 
 start_a = []
 
@@ -20,14 +20,14 @@ if cnt == 1:
     else:
         print('No')
 else:
-    for i in arr_A:
-        if i == arr_B[0]:
-            start_a.append(index(i)) 
+    for i in range(leng_A):
+        if arr_A[i] == arr_B[0]:
+            start_a.append(i)
     for i in start_a:
         if leng_B > len(arr_A[i:]):
             break
         else:
-            New_a = arr_A[i:i + leng_B + 1]
+            New_a = arr_A[i:i + leng_B]
             if New_a == arr_B:
                 print('Yes')
             else:
