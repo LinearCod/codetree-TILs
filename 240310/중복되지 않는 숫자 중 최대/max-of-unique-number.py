@@ -27,4 +27,5 @@ while True:
         break
     elif arr_count == 1 and t != 0:
         print(max(arr))
+        break
     arr_count = arr.count(max(arr))
