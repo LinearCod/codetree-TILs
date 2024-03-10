@@ -2,7 +2,7 @@ n = int(input())
 
 arr = list(map(int, input().split()))
 
-idx = 0
+idx = 1
 
 cnt = 0
 
@@ -13,4 +13,4 @@ for i in arr:
             break
     idx += 1
 
-print(cnt)
+print(idx)
