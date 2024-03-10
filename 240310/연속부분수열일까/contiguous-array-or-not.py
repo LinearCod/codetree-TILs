@@ -33,10 +33,10 @@ elif cnt_1 != 1 and leng_B != 1:
         else:
             New_a = arr_A[i:i + leng_B]
             if New_a == arr_B:
-                cnt_1 += 1
+                cnt_2 += 1
             else:
                 pass
-    if cnt_1 != 0:
+    if cnt_2 != 0:
         print('Yes')
     else:
         print('No')
@@ -48,7 +48,6 @@ elif leng_B == 1:
         print('No')
     else:
         print('Yes')
-
 
 # 4 1
 # 1 2 5 2
