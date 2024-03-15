@@ -1,4 +1,16 @@
-curr_col = start_col
+# 변수 선언 및 입력
+n, m = tuple(map(int, input().split()))
+answer = [
+    [0 for _ in range(m)]
+    for _ in range(n)
+]
+count = 1
+
+        
+# Step 1:
+for start_col in range(m):
+    curr_row = 0
+    curr_col = start_col
 
     while 0 <= curr_col and curr_row < n:
         answer[curr_row][curr_col] = count
