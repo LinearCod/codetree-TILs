@@ -4,7 +4,7 @@ arr = list(word)
 
 while True:
     n = int(input())
-    if arr == []:
+    if len(arr) == 1:
         break
     if n > len(arr):
         arr.pop(-1)
