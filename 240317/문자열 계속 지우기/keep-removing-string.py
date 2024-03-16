@@ -9,7 +9,11 @@ while True:
     if idx == -1:
         print(''.join(arr))
         break
+    elif arr == []:
+        break
     else:
-        arr = arr[0:idx] + arr[idx + len(arr):]
+        a = arr[0:idx]
+        b = arr[idx + len(word_b):]
+        arr = a + b
         s = ''.join(arr)
         idx = s.find(word_b)
