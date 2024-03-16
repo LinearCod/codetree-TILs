@@ -1,9 +1,8 @@
 word_a = input()
 word_b = input()
 
-if len(word_a) < len(word_b):
-    print(word_a)
-else:
+
+if word_b in word_a:
     idx = word_a.index(word_b)
 
     arr = list(word_a)
@@ -20,3 +19,5 @@ else:
             arr = a + b
             s = ''.join(arr)
             idx = s.find(word_b)
+else:
+    print(word_a)
