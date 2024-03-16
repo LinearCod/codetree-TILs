@@ -11,5 +11,6 @@ while True:
     if n > t:
         arr.pop(-1)
         print(''.join(arr))
+        continue
     arr.pop(n)
     print(''.join(arr))
