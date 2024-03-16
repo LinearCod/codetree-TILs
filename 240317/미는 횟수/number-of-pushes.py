@@ -12,17 +12,11 @@ else:
             a_1 = a[1:] + a[0]
             b_1 = b[1:] + b[0]
             cnt += 1
-        # elif len(a) == 3:
-        #     a_2 = a[-1] + a[0:2]
-        #     cnt += 1
-        #     if a_2 == b:
-        #         print(cnt)
-        #         break
         else:
-            if b_1 == a:
+            if a_1 == b:
                 print(cnt)
                 break
-            if a_1 == b:
+            if b_1 == a:
                 print(cnt)
                 break
             if a_1 == a:
