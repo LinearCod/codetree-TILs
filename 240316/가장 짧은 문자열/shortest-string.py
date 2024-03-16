@@ -6,4 +6,4 @@ arr = [len(word_1), len(word_2), len(word_3)]
 
 arr.sort
 
-print(arr[-1] - arr[0])
+print(arr[2] - arr[0])
