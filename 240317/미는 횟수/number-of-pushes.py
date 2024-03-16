@@ -18,12 +18,15 @@ else:
         #     if a_2 == b:
         #         print(cnt)
         #         break
-        elif cnt != 0:
+        else:
             if b_1 == a:
                 print(cnt)
                 break
-            if a_1 == b or b_1 == a:
+            if a_1 == b:
                 print(cnt)
+                break
+            if a_1 == a:
+                print(-1)
                 break
             a_1 = a_1[1:] + a_1[0]
             b_1 = b_1[1:] + b_1[0]
